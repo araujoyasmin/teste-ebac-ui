@@ -26,4 +26,13 @@ describe('Funcionalidade: Cadastro', () => {
 
         cy.get('.woocommerce-message').should('contain', 'Detalhes da conta modificados com sucesso.')
     });
+
+    it.only('cadastro - customizado', () => {
+        var nome = faker.person.firstName()
+        var email = faker.internet.email(nome)
+        var sobrenome = faker.person.lastName()
+
+        cy.cadastro(nome, sobrenome, email)
+        cy.get('.woocommerce-message').should('contain', 'Detalhes da conta modificados com sucesso.')
+    });
 });
