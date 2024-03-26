@@ -1,0 +1,14 @@
+[
+    {
+        "nomeProduto": "Ingrid Running Jacket",
+        "tamanho": "M",
+        "cor": "Orange",
+        "quantidade": 4
+    },
+    {
+        "nomeProduto": "Aether Gym Pant",
+        "tamanho": "34",
+        "cor": "Green",
+        "quantidade": 5
+    }
+]
